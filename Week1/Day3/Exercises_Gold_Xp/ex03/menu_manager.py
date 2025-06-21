@@ -32,27 +32,27 @@ class MenuManager:
                 return
         print(f"Item '{name}' not found in the menu.")
 
-def main():
+# def main():
     
-    manager = MenuManager()
+#     manager = MenuManager()
     
-    print("Initial Menu:")
-    for item in manager.menu:
-        print(f"Name: {item['name']}, Price: {item['price']}, Spice Level: {item['spice_level']}, Gluten Index: {item['gluten_index']}")
+#     print("Initial Menu:")
+#     for item in manager.menu:
+#         print(f"Name: {item['name']}, Price: {item['price']}, Spice Level: {item['spice_level']}, Gluten Index: {item['gluten_index']}")
 
-    print("\nAdding new item:")
-    manager.add_item("Pasta", 12, "A", True)
-    for item in manager.menu:
-        print(f"Name: {item['name']}, Price: {item['price']}, Spice Level: {item['spice_level']}, Gluten Index: {item['gluten_index']}")
+#     print("\nAdding new item:")
+#     manager.add_item("Pasta", 12, "A", True)
+#     for item in manager.menu:
+#         print(f"Name: {item['name']}, Price: {item['price']}, Spice Level: {item['spice_level']}, Gluten Index: {item['gluten_index']}")
 
-    print("\nUpdating item:")
-    manager.update_item("Soup", 11, "B", False)
-    for item in manager.menu:
-        print(f"Name: {item['name']}, Price: {item['price']}, Spice Level: {item['spice_level']}, Gluten Index: {item['gluten_index']}")
+#     print("\nUpdating item:")
+#     manager.update_item("Soup", 11, "B", False)
+#     for item in manager.menu:
+#         print(f"Name: {item['name']}, Price: {item['price']}, Spice Level: {item['spice_level']}, Gluten Index: {item['gluten_index']}")
 
-    print("\nRemoving item:")
-    manager.remove_item("French Fries")
-    for item in manager.menu:
-        print(f"Name: {item['name']}, Price: {item['price']}, Spice Level: {item['spice_level']}, Gluten Index: {item['gluten_index']}")
+#     print("\nRemoving item:")
+#     manager.remove_item("French Fries")
+#     for item in manager.menu:
+#         print(f"Name: {item['name']}, Price: {item['price']}, Spice Level: {item['spice_level']}, Gluten Index: {item['gluten_index']}")
 
-main()
+# main()
