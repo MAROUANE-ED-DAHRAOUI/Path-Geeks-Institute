@@ -1,6 +1,5 @@
 from datetime import datetime
 
-# Ask the user for their birthdate
 birthdate_str = input("Enter your birthdate (DD/MM/YYYY): ")
 
 # Convert the string to a date object
