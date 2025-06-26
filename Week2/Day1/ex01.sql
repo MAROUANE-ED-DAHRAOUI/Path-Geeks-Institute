@@ -1,3 +1,13 @@
+-- CREATE TABLE items (
+--     id_item SERIAL PRIMARY KEY,
+--     name_item VARCHAR(50) NOT NULL,
+--     price INT NOT NULL
+-- )
+
+-- CREATE TABLE customers (
+--     name_customer VARCHAR(50) NOT NULL,
+--     lastname_customer VARCHAR(50) NOT NULL
+-- )
 -- insert into items(name_item,price)
 -- values('Small Desk', 100) ,
 -- 	  ('Large desk', 300) ,
