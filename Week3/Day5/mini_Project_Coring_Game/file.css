@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+#palette {
+  margin-bottom: 20px;
+}
+.color {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #333;
+  margin: 2px;
+  cursor: pointer;
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(63, 10px);
+  grid-template-rows: repeat(24, 10px);
+  gap: 0px;
+  justify-content: center;
+}
+.square {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
