@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --gray: #d1d0d0;
+    --green: #4bae4f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", system-ui;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: var(--gray);
+    padding: 10px;
+}
+
+.todolist{
+    background-color: rgb(255, 255, 255);
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todolist .title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todolist .title img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.todolist .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.todolist .row input{
+    background-color: var(--gray);
+    width: 80%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.todolist .row .btn{
+    border: none;
+    background-color: var(--green);
+    padding : 12px 30px;
+    border-radius: 5px;
+}
+
+
+#task-list li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+}
+
+#task-list li span{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;   
+}
+
+#task-list li::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    width: 28px;
+    height: 28px;
+    background: url("./image/check.png") center/cover no-repeat;
+}
+
+#task-list li.checked::before{
+    background: url("./image/checked.png") center/cover;
+}
+#task-list li.checked{
+    text-decoration: line-through;
+    color: #2c1212;
+}
