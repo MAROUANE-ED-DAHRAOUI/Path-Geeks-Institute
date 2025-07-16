@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Challenge: HTML Form</title>
+</head>
+<body>
+
+    <!-- 🔹 Form with name and last name -->
+    <form id="myForm">
+        <!-- Input for first name -->
+        <input type="text" id="name" placeholder="First Name" required>
+        <!-- Input for last name -->
+        <input type="text" id="lastname" placeholder="Last Name" required>
+        <!-- Submit button -->
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- 🔹 JSON Output -->
+    <!-- Paragraph to display JSON result -->
+    <p id="output"></p>
+
+    <script>
+        // Get form and output elements
+        const form = document.getElementById('myForm');
+        const output = document.getElementById('output');
+
+        // Listen for form submission
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // prevent page reload
+
+            // Get values from inputs
+            const name = document.getElementById('name').value;
+            const lastname = document.getElementById('lastname').value;
+
+            // Create object with form data
+            const data = {
+                name: name,
+                lastname: lastname
+            };
+
+            // Display object as JSON in the output paragraph
+            output.textContent = JSON.stringify(data);
+        });
+    </script>
+
+</body>
+</html>
