@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Game JSON Exercise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 4px solid #007acc;
+        }
+        .debug-info {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .debug-info h3 {
+            margin-top: 0;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍄 Mario Game JSON Exercise</h1>
+        
+        <div class="debug-info">
+            <h3>🔍 How to Use Debugger:</h3>
+            <ol>
+                <li>Open Developer Tools (F12)</li>
+                <li>Go to the <strong>Sources</strong> tab</li>
+                <li>Find file.js in the file tree</li>
+                <li>Click on line with <code>debugger;</code> statement</li>
+                <li>Refresh the page</li>
+                <li>When execution pauses, inspect variables in the <strong>Scope</strong> panel</li>
+            </ol>
+        </div>
+        
+        <h2>Console Output:</h2>
+        <p>Open the browser console (F12 → Console) to see the output.</p>
+        
+        <h2>Original Object:</h2>
+        <pre id="original"></pre>
+        
+        <h2>JSON String:</h2>
+        <pre id="json"></pre>
+        
+        <h2>Pretty Printed JSON:</h2>
+        <pre id="pretty"></pre>
+        
+    </div>
+    
+    <script src="file.js"></script>
+    <script>
+        // Display results in HTML
+        document.getElementById('original').textContent = JSON.stringify(marioGame, null, 2);
+        document.getElementById('json').textContent = JSON.stringify(marioGame);
+        document.getElementById('pretty').textContent = JSON.stringify(marioGame, null, 2);
+    </script>
+</body>
+</html>
