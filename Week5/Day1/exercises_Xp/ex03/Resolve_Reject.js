@@ -44,7 +44,6 @@ async function testBothPromises() {
 // Run async test
 testBothPromises();
 
-// You can also chain them together
 console.log("\nChaining promises:");
 Promise.resolve(3)
     .then(value => {
