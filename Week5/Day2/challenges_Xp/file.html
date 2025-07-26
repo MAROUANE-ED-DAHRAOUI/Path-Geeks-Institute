@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Search</title>
+</head>
+<body>
+    <div class="container">
+        <h1>GIF Search</h1>
+        
+        <form class="search-form" id="searchForm">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search for GIFs... (e.g., funny, cats, dance)"
+                required
+            >
+            <button type="submit" id="searchBtn">Search GIF</button>
+        </form>
+        
+        <button id="deleteAllBtn" style="display: none;">Delete All GIFs</button>
+        
+        <div id="loadingMessage" class="loading" style="display: none;">
+            🔍 Searching for GIFs...
+        </div>
+        
+        <div id="errorMessage" class="error" style="display: none;"></div>
+        
+        <div id="gifContainer" class="gif-container"></div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
